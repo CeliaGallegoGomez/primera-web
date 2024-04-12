@@ -35,6 +35,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.main {
+  padding-left: 32px;
+}
 
 .logo {
   padding-top: 123px;
@@ -44,18 +47,38 @@ body {
   width: 311px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 16px;
   margin-top: 64px;
 }
 
-.text__tittle {
+.header__tittle {
   font-family: "Bai Jamjuree", sans-serif;
   color: #4c545c;
+  font-size: 32px;
+  width: 311px;
 }
 
-.header__text {
+.tittle {
+  color: #4c545c;
+  width: 311px;
+  height: 70px;
+  text-align: center;
+}
+
+.section__tittle {
+  font-size: 28px;
+}
+
+.text {
+  font-size: 16px;
+  width: 311px;
+  text-align: center;
   color: #9eabb2;
   line-height: 26px;
+  width: 311px;
+  margin-top: 16px;
 }
 
 .button__container {
@@ -92,6 +115,8 @@ body {
     inset 0 -3px rgba(0, 0, 0, 0.0988);
 }
 
+.image__container 
+
 @media screen and (min-width: 768px) {
   .header {
     background-image: url(/assets/images/bg-header-desktop.png);
@@ -102,11 +127,36 @@ body {
     align-items: center;
   }
 
-  .text__tittle {
+  .header__tittle {
     font-size: 46px;
   }
 
   .header__text {
     line-height: 30px;
+    width: 730px;
+    height: 60px;
+    margin-left: 335px;
+  }
+
+  .button__container {
+    display: flex;
+    flex-direction: row;
+    width: 470px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 485px;
+    margin-top: 10px;
+  }
+
+  .button {
+    width: 227px;
+  }
+
+  .button--green:hover {
+    background-color: rgba(38, 187, 164, 0.8);
+  }
+
+  .button--blue:hover {
+    background-color: rgba(97, 116, 255, 0.8);
   }
 }
